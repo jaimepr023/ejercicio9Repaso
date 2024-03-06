@@ -63,13 +63,13 @@
             using(StreamReader sr = new StreamReader(fichero))
             {
                 int count = 1;
-                frase= sr.ReadLine();
+                frase = sr.ReadLine();
                 while(frase!=null)
                 {
                     
-                    if (count == trozos.Length | count == trozos.Length - 1)
+                    if (count == frase.Length | count == frase.Length - 1)
                     {
-                        Console.WriteLine("La palabra se trata de:" + trozos[count].ToString());
+                        Console.WriteLine("La palabra se trata de:" + frase);
                     }
                     count++;
                 }
